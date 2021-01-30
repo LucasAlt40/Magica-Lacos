@@ -25,6 +25,8 @@
   line-height: 34px;
 
   color: #000000;
+
+  transition: 400ms;
 }
 
 #ret1 {
@@ -38,6 +40,8 @@
 
   background: #F54291;
   border-radius: 24px 24px 0px 0px;
+
+  transition: 400ms;
 }
 
 #laco {
@@ -50,6 +54,8 @@
   margin-top: 44px;
 
   border-radius: 0px 0px 24px 24px;
+
+  transition: 400ms;
 }
 
 
