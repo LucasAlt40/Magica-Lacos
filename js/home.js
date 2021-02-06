@@ -1,24 +1,26 @@
-let time = 2000,
-  currentImageIndex = 0,
-  images = document.querySelectorAll(".slider img"),
-  max = images.length;
+// let time = 2000,
+//   currentImageIndex = 0,
+//   images = document.querySelectorAll(".slider img"),
+//   max = images.length;
 
-function nextImage () {
+// function nextImage () {
 
-  images[currentImageIndex].classList.remove("selected")
+//   console.log(images)
 
-  currentImageIndex++
+//   images[currentImageIndex].classList.remove("selected")
 
-  if(currentImageIndex >= max)
-    currentImageIndex = 0
+//   currentImageIndex++
 
-  images[currentImageIndex].classList.add("selected")
-}
+//   if(currentImageIndex >= max)
+//     currentImageIndex = 0
 
-function start() {
-  setInterval(() => {
-    nextImage()
-  })
-}
+//   images[currentImageIndex].classList.add("selected")
+// }
 
-window.addEventListener("load", start)
+// function start() {
+//   setInterval(() => {
+//     nextImage()
+//   })
+// }
+
+// window.addEventListener("load", start)
