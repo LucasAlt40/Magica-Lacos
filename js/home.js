@@ -1,26 +1,28 @@
-// let time = 2000,
-//   currentImageIndex = 0,
-//   images = document.querySelectorAll(".slider img"),
-//   max = images.length;
+// let time = 5000,
+//     currentImageIndex = 0,
+//     images = document
+//                 .querySelectorAll("#slider img")
+//     max = images.length;
 
-// function nextImage () {
+// function nextImage() {
 
-//   console.log(images)
+//     images[currentImageIndex]
+//         .classList.remove("selected")
 
-//   images[currentImageIndex].classList.remove("selected")
+//     currentImageIndex++
 
-//   currentImageIndex++
+//     if(currentImageIndex >= max)
+//         currentImageIndex = 0
 
-//   if(currentImageIndex >= max)
-//     currentImageIndex = 0
-
-//   images[currentImageIndex].classList.add("selected")
+//     images[currentImageIndex]
+//         .classList.add("selected")
 // }
 
 // function start() {
-//   setInterval(() => {
-//     nextImage()
-//   })
+//     setInterval(() => {
+//         // troca de image
+//         nextImage()
+//     }, time)
 // }
 
 // window.addEventListener("load", start)

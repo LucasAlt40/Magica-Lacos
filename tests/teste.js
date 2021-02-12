@@ -1,12 +1,18 @@
-document.getElementById("laco").onclick = function() {clica()};
+const produto = document.querySelectorAll('#produto');
 
-function clica() {
-  document.getElementById("produto").classList.add("selected");
+for (prod of produto) {
+  prod.onclick = function(e) {
 
-  document.getElementById("laco").onclick = function() {clicaAgain()};
+    const square = this.querySelector('#content');
+    square.classList.toggle('selected');
 
-  function clicaAgain() {
-    document.getElementById("produto").classList.remove("selected")
-}
-}
+    const head = this.querySelector('#bg-title');
+    head.classList.toggle('selected');
 
+
+    const compra = this.querySelector('#comprar');
+    compra.onclick = function(e) {
+      e.stopPropagation();
+    };
+  }
+};
