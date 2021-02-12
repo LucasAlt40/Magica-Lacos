@@ -1,9 +1,246 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-header {
-  background-color: #f54291;
+body {
+  width: 100%;
+}
+
+#header {
+  text-decoration: none;
+
+  width: 100%;
+  height: 90px;
+
   display: flex;
+
+  background-color: #f54291;
+}
+
+#instagram {
+  position: absolute;
+
+  margin-left: 1040px;
+  margin-top: 27px;
+}
+
+#whats{
+  position: absolute;
+
+  margin-left: 990px;
+  margin-top: 27px;
+}
+
+#logo {
+  position: absolute;
+  
+  margin-left: 10px;
+  margin-top: 5px;
+
+  border-radius: 8px;
+}
+
+#contacts {
+  margin-left: 880px;
+  margin-top: 30px;
+
+  font-size: 22px;
+  font-family: Ubuntu;
+
+}
+
+#back  {
+  position: absolute;
+  margin-left: 1200px;
+  margin-top: 30px;
+
+  font-size: 22px;
+  font-family: Ubuntu;
+  color: black;
+  text-decoration: none;
+}
+
+#voltar {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  position: absolute;
+  margin-left: 1150px;
+  margin-top: 30px;
+
+  font-size: 22px;
+  font-family: Ubuntu;
+  color: black;
+  text-decoration: none;
+}
+
+#back:hover {
+  text-decoration: underline;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  transition: 400ms;
+}
+
+.container img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+#produto{
+  cursor: pointer;
+  margin: 10px;
+  float: left;
+}
+
+
+#bg-content{
+  display: flex;
+  width: 242px;
+  height: 249px;
+  border-radius: 24px;
+  background: #FF69B4;
+
+  transition: 400ms;
+}
+
+#head {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 242px;
+  height: 44px;
+  background: #F54291;
+  border-radius: 24px 24px 0px 0px;
+
+  transition: 400ms;
+}
+
+
+#nome-produto {
+  position: absolute;
+  margin-left: 61px;
+  font-family: Ubuntu;
+  font-size: 30px;
+  color: #000000;
+  transition: 400ms;
+}
+
+#laco {
+  position: absolute;
+  width: 188px;
+  height: 175px;
+  margin-left: 27px;
+  margin-top: 44px;
+  border-radius: 0px 0px 24px 24px;
+
+  transition: 400ms;
+  object-fit: cover;
+}
+
+#infos {
+  opacity: 0;
+  position: absolute;
+
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+#preco1 {
+  position: absolute;
+  margin-left: 412px;
+  margin-top: 130px;
+  width: 111px;
+  height: 32px;
+}
+
+#info1 {
+  position: absolute;
+  margin-left: 412px;
+  margin-top: 200px;
+  width: 400px;
+  height: 32px;
+}
+
+#info2 {
+  position: absolute;
+  margin-left: 412px;
+  margin-top: 240px;
+  width: 400px;
+  height: 32px;
+}
+
+#comprar {
+  display: flex;
+  text-align: center;
+  justify-content: center;  
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 340px;
+
+  width: 250px;
+  height: 37px;
+
+  background-color: #ec277d;
+
+  border-radius: 20px;
+  transition: 400ms;
+}
+
+#info3 {
+  position: absolute;
+
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 32px;
+  color: #000000;
+}
+
+
+.selected #head {
+  width: 876px;
+}
+
+.selected #bg-content{
+  width: 876px;
+  height: 395px;
+}
+
+.selected #laco {
+  width: 341px;
+  height: 317px;
+
+  object-fit: cover;
+}
+
+.selected #nome-produto {
+  margin-left: 380px;
+}
+
+.selected #infos {
+  opacity: 1.0;
+  transition: 3.2s;
+}
+
+.selected #comprar:hover {
+  width: 340px;
+  height: 37px;
 }
