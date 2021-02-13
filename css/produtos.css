@@ -5,14 +5,12 @@
   font-family: sans-serif;
 }
 
-body {
-  width: 100%;
-}
+
 
 #header {
   text-decoration: none;
 
-  width: 100%;
+  
   height: 90px;
 
   display: flex;
@@ -80,6 +78,30 @@ body {
 #back:hover {
   text-decoration: underline;
 }
+
+
+
+.busca {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+
+  transition: 400ms;
+  margin: 10px;
+}
+
+.busca div {
+  cursor: pointer;
+}
+
+.busca div:hover {
+  background-color: #ec277d;
+  transition: 700ms;
+}
+
 
 
 
