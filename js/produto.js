@@ -16,3 +16,22 @@ for (prod of produto) {
     };
   }
 };
+
+
+
+
+
+const laco = document.querySelector('.busca-laco')
+const pulseira = document.querySelector('.busca-pulseira')
+const chapeu = document.querySelector('.busca-chapeu')
+const tiara = document.querySelector('.busca-tiara')
+const viseira = document.querySelector('.busca-viseira')
+
+
+laco.onclick = function(e) {
+  const lacos = document.querySelector('#lacos')
+  console.log(lacos)
+  lacos.classList.toggle('produto-selecionado')
+
+  
+}
