@@ -5,7 +5,10 @@
   font-family: sans-serif;
 }
 
-
+body {
+  width: 100%;
+  height: 100%;
+}
 
 #header {
   text-decoration: none;
@@ -81,48 +84,104 @@
 
 
 
-.busca {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+
+
+section {
+  width: 800px;
+  transition: 400ms;
   align-items: center;
   align-content: center;
 
-  transition: 400ms;
-  margin: 10px;
-}
-
-.busca div {
-  cursor: pointer;
-}
-
-.busca div:hover {
-  background-color: #f01171;
+  margin: 20px;
+  margin-left: 30%;
   transition: 700ms;
 }
 
-.busca a{
-  text-decoration: none;
-  color: #000000;
+section label {
+  padding: 10px; 
+  display: block;
+  float: left;
+  background-color: #F54291;
+  font-family: Ubuntu;
+  text-align: center;
+  cursor: pointer;
+
+  transition: 700ms;
 }
 
-.busva a:hover{
-  text-decoration: underline;
+input:checked + label {
+  background-color: #e90e6d;
+  transition: 700ms;
 }
 
+input {
+  display: none;
+}
 
-.produto-selecionado {
+#bt_laco:checked ~ .container #pulseira,
+#bt_laco:checked ~ .container #chapeu,
+#bt_laco:checked ~ .container #viseira,  
+#bt_laco:checked ~ .container #tiara {
+  display: none;
+}
+
+#bt_pulseira:checked ~ .container #laco1,
+#bt_pulseira:checked ~ .container #chapeu,
+#bt_pulseira:checked ~ .container #viseira,  
+#bt_pulseira:checked ~ .container #tiara {
+  display: none;
+}
+
+#bt_chapeu:checked ~ .container #laco1,
+#bt_chapeu:checked ~ .container #pulseira,
+#bt_chapeu:checked ~ .container #viseira,  
+#bt_chapeu:checked ~ .container #tiara {
+  display: none;
+}
+
+#bt_tiara:checked ~ .container #laco1,
+#bt_tiara:checked ~ .container #chapeu,
+#bt_tiara:checked ~ .container #viseira,  
+#bt_tiara:checked ~ .container #pulseira {
+  display: none;
+}
+
+#bt_viseira:checked ~ .container #laco1,
+#bt_viseira:checked ~ .container #chapeu, 
+#bt_viseira:checked ~ .container #pulseira {
   display: none;
 }
 
 
 
+
+.produto-selecionado {
+  transition: 700ms;
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container {
+  width: 100%;
+  max-width: 100vh;
+  align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
+
+  margin-left: 15%;
 
   transition: 400ms;
 }
@@ -134,10 +193,9 @@
   object-fit: cover;
 }
 
-#produto{
+.produto{
   cursor: pointer;
   margin: 10px;
-  float: left;
 }
 
 
