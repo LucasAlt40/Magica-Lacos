@@ -1,4 +1,4 @@
-const produto = document.querySelectorAll('.produto');
+const produto = document.querySelectorAll('#produto');
 
 for (prod of produto) {
   prod.onclick = function(e) {
@@ -16,3 +16,4 @@ for (prod of produto) {
     };
   }
 };
+

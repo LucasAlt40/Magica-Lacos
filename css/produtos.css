@@ -6,14 +6,12 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
+ 
 }
 
 #header {
   text-decoration: none;
 
-  
   height: 90px;
 
   display: flex;
@@ -42,6 +40,8 @@ body {
   margin-top: 5px;
 
   border-radius: 8px;
+
+  object-fit: cover;
 }
 
 #contacts {
@@ -53,112 +53,25 @@ body {
 
 }
 
-#back  {
-  position: absolute;
-  margin-left: 1200px;
-  margin-top: 30px;
 
-  font-size: 22px;
-  font-family: Ubuntu;
-  color: black;
-  text-decoration: none;
+
+
+
+#filtro-produtos {
+  width: 546px;
+  height: auto;
+  margin: 100px auto;
 }
 
-#voltar {
-  width: 30px;
-  height: 30px;
-  object-fit: cover;
-  position: absolute;
-  margin-left: 1150px;
-  margin-top: 30px;
-
-  font-size: 22px;
-  font-family: Ubuntu;
-  color: black;
-  text-decoration: none;
-}
-
-#back:hover {
-  text-decoration: underline;
-}
-
-
-
-
-
-
-section {
-  width: 800px;
-  transition: 400ms;
-  align-items: center;
-  align-content: center;
-
-  margin: 20px;
-  margin-left: 30%;
-  transition: 700ms;
-}
-
-section label {
-  padding: 10px; 
-  display: block;
-  float: left;
+#filtro-produtos button {
+  width: 175px;
+  padding: 13px;
   background-color: #F54291;
-  font-family: Ubuntu;
   text-align: center;
-  cursor: pointer;
-
-  transition: 700ms;
-}
-
-input:checked + label {
-  background-color: #e90e6d;
-  transition: 700ms;
-}
-
-input {
-  display: none;
-}
-
-#bt_laco:checked ~ .container #pulseira,
-#bt_laco:checked ~ .container #chapeu,
-#bt_laco:checked ~ .container #viseira,  
-#bt_laco:checked ~ .container #tiara {
-  display: none;
-}
-
-#bt_pulseira:checked ~ .container #laco1,
-#bt_pulseira:checked ~ .container #chapeu,
-#bt_pulseira:checked ~ .container #viseira,  
-#bt_pulseira:checked ~ .container #tiara {
-  display: none;
-}
-
-#bt_chapeu:checked ~ .container #laco1,
-#bt_chapeu:checked ~ .container #pulseira,
-#bt_chapeu:checked ~ .container #viseira,  
-#bt_chapeu:checked ~ .container #tiara {
-  display: none;
-}
-
-#bt_tiara:checked ~ .container #laco1,
-#bt_tiara:checked ~ .container #chapeu,
-#bt_tiara:checked ~ .container #viseira,  
-#bt_tiara:checked ~ .container #pulseira {
-  display: none;
-}
-
-#bt_viseira:checked ~ .container #laco1,
-#bt_viseira:checked ~ .container #chapeu, 
-#bt_viseira:checked ~ .container #pulseira {
-  display: none;
-}
-
-
-
-
-.produto-selecionado {
-  transition: 700ms;
-  display: none;
+  font-family: 'Ubuntu';
+  border: none;
+  border-radius: 8px;
+  margin: 2px;
 }
 
 
@@ -167,37 +80,14 @@ input {
 
 
 
-
-
-
-
-
-
-.container {
-  width: 100%;
-  max-width: 100vh;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-
-  margin-left: 15%;
-
-  transition: 400ms;
-}
-
-.container img {
-  width: 300px;
-  height: 300px;
-  margin: 10px;
-  object-fit: cover;
-}
-
-.produto{
+#produto{
   cursor: pointer;
   margin: 10px;
 }
 
+.selected #produto {
+  cursor: default;
+}
 
 #bg-content{
   display: flex;

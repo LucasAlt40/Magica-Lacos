@@ -16,3 +16,11 @@ for (prod of produto) {
     };
   }
 };
+
+
+function filtro() {
+  const lacos = document.querySelector('.laco');
+  if(document.querySelector() != lacos) {
+    classList.toggle('prod-selected')
+  }
+}
