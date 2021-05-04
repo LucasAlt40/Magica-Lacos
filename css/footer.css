@@ -1,0 +1,50 @@
+@import url(global.css);
+@import url(responsive.css);
+
+footer {
+  background-color: black;
+  width: 100%;
+  color: white;
+  height: 25vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+footer > h4 {
+  align-self: flex-end;
+  margin: 2rem;
+}
+
+.contact-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.contatoF, .contatoF a {
+  display: flex;
+  align-items: center;
+}
+
+.contatoF {
+  margin-top: 1rem;
+}
+.contatoF p {
+  margin-left: 1rem;
+}
+
+.contatoF a {
+  color: white;
+  cursor: pointer;
+}
+
+.contatoF a:hover {
+  color: var(--rosa-principal);
+}
+
+h5 {
+  color: white; 
+}

@@ -1,0 +1,59 @@
+@media (max-width: 1440px), (max-height: 800px) {
+  .home > img {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 1440px), (max-height: 900px) {
+  .about {
+    height: 500px;
+    width: 750px;
+    flex-direction: row-reverse;
+  }
+
+  .about > img {
+    margin: 1rem;
+  }
+
+  .about > h1 {
+    align-self: initial;
+  }
+
+  .texto-sobre {
+    width: 300px;
+  }
+
+  .foto {
+    margin: 4rem;
+  }
+  
+}
+
+@media (max-width: 1180px) {
+  .home > img {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  header > nav {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+    width: 100vw;
+  }
+
+  header > img {
+    margin: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  #contato h4 {
+    position: absolute;
+    margin-left: 50%;
+  }
+}

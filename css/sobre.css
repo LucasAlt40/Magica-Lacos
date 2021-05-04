@@ -1,0 +1,52 @@
+@import url(global.css);
+@import url(responsive.css);
+
+
+.sobre {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto > img {
+ width: 250px;
+ border-radius: 50%;
+}
+
+.foto {
+  text-align: center;
+}
+
+.foto > h1 {
+  margin: 2rem;
+}
+
+.texto-sobre > h4 {
+  margin-top: 1rem;
+}
+
+.about {
+  width: 450px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(234, 134, 182);
+  border-radius: 12px;
+  background: linear-gradient(
+    35deg,
+    rgba(234, 134, 182, 1) 50%,
+    rgba(224, 82, 151, 1) 100%
+  );
+  box-shadow: 10px 10px 10px gray;
+  text-align: end;
+}
+
+.texto-sobre {
+  text-align: center;
+  width: 250px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
